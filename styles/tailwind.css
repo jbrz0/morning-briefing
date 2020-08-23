@@ -36,3 +36,20 @@ a {
 .rounded-xl {
   border-radius: 1.5rem;
 }
+
+/* Time Gradients */
+.morning {
+  background: rgb(245,84,152);
+  background: linear-gradient(0deg, rgba(245,84,152,1) 0%, rgba(25,208,194,1) 100%);
+}
+.afternoon {
+  background: rgb(25,208,194);
+  background: linear-gradient(0deg, rgba(25,208,194,1) 0%, rgba(66,68,255,1) 100%);
+}
+.night {
+  background: rgb(66,68,255);
+background: linear-gradient(0deg, rgba(66,68,255,1) 0%, rgba(53,52,84,1) 100%);
+}
+.default {
+  background: #19D0C2;
+}

@@ -1,4 +1,7 @@
 import { useEffect } from "react"
+import { useExcerpt } from '../../hooks/useExcerpt'
+
+const dummyText = 'The hottest look right now is definitely bold eyeliner and it\'s easier to do than'
 
 function NewsItem() {
   return <div className="bg-purple-300 p-4 rounded-lg border border-solid border-purple-200
@@ -10,7 +13,8 @@ function NewsItem() {
     </div>
 
     <div className="col-span-4">
-      <p className="text-sm">The hottest look right now is definitely bold eyeliner and it's easier to do than ...</p>
+
+      <p className="text-sm mt-1">{useExcerpt(dummyText, 11)}</p>
     </div>
 
   </div>

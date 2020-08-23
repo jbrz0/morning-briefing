@@ -1,0 +1,18 @@
+- weather -> openWeatherAPI
+- news -> news api
+- momentJS calendar
+- momentJS Time Clock
+- Google search:
+window.location.href =
+https://www.google.com/search?q=test+google+search
+- Deployment to netlify
+
+
+OLD STUFF:
+- github -> githubAPI
+https://api.github.com/users/brz0
+- twitter -> twitterAPI
+- Themes + Cookies
+
+POTENTIAL:
+Add city name to weather img keywords
