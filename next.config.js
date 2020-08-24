@@ -26,5 +26,6 @@ module.exports = {
     CITY: process.env.CITY,
     OPEN_WEATHER: process.env.OPEN_WEATHER,
     WEATHER_UNITS: process.env.WEATHER_UNITS,
+    NEWS: process.env.NEWS,
   }
 }

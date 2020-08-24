@@ -3,6 +3,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* plugins */
+@import "./calendar.css";
+
 /* Fonts */
 @font-face {
   font-family: 'IBM Plex Sans';

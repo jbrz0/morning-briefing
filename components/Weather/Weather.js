@@ -36,7 +36,7 @@ function Weather() {
     .then(() => {
       // Set BG Image
       const keys = keywords.join(',')
-      setBg(`https://source.unsplash.com/1600x900/?${keys}`)
+      setBg(`https://source.unsplash.com/1600x900/?weather,${keys}`)
     })
 
     // Set weather units

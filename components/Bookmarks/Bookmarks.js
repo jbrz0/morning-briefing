@@ -23,7 +23,7 @@ function Bookmarks() {
       {links.map((link, i) => <a
         className="col-span-1 bg-purple-300 m-2 rounded-lg
         border border-solid border-purple-200 text-white
-        truncate py-4 px-4 text-sm"
+        truncate py-4 px-4 text-sm hover:opacity-75"
         href={link.url}
         key={i}>
 
