@@ -7,7 +7,6 @@ module.exports = {
 
   // Re-map environment vars to work with next
   env: {
-    API_TEST: process.env.API_TEST,
     LINK_ONE_TITLE: process.env.LINK_ONE_TITLE,
     LINK_TWO_TITLE: process.env.LINK_TWO_TITLE,
     LINK_THREE_TITLE: process.env.LINK_THREE_TITLE,
