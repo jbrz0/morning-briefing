@@ -23,8 +23,9 @@ function Weather() {
 
     // Get weather data
     const url = 'https://api.openweathermap.org/data/2.5/weather?q='
+    const cityName = process.env.CITY.split(' ').join('+')
 
-    axios.get(`${url}${process.env.CITY}&appid=${process.env.OPEN_WEATHER}&units=metric`)
+    axios.get(`${url}${cityName}&appid=${process.env.OPEN_WEATHER}&units=metric`)
     .then(function (response) {
       console.log(response.data)
       setWeather(response.data)
