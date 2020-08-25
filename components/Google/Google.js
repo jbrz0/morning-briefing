@@ -19,7 +19,7 @@ function Google() {
 
     <input type="text"
       className="bg-purple-300 text-white placeholder-gray-100 w-full
-        rounded-lg outline-none pr-32 py-4 pl-4 border border-solid border-purple-200"
+        rounded-lg outline-none pr-20 py-4 pl-4 border border-solid border-purple-200"
       style={{textIndent: '0.5rem'}}
       placeholder="Enter Search Term"
       onChange={(e) => setTerm(e.target.value.split(' ').join('+'))}
@@ -28,7 +28,7 @@ function Google() {
 
     <button className="absolute right-0 mr-6 py-4 px-6
       text-teal font-medium"
-      onClick={search}>Google Search</button>
+      onClick={search}>Search</button>
   </div>
 }
 

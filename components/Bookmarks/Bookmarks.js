@@ -13,17 +13,14 @@ const links = [
 
 function Bookmarks() {
 
-  useEffect(() => {
-    console.log(process.env.LINK_ONE_TITLE)
-  }, [])
 
   return <div className="bg-purple-400 rounded-xl p-4 mb-6">
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-2 md:grid-cols-4">
 
       {links.map((link, i) => <a
         className="col-span-1 bg-purple-300 m-2 rounded-lg
         border border-solid border-purple-200 text-white
-        truncate py-4 px-4 text-sm hover:opacity-75"
+        truncate py-4 px-4 text-sm hover:opacity-75 bookmark-link"
         href={link.url}
         key={i}>
 

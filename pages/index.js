@@ -17,19 +17,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex justify-center items-center h-screen">
+      <div className="main-wrapper xl:flex xl:justify-center xl:items-center xl:h-screen">
         <Container>
           <News />
 
-          <div className="col-span-2">
+          <div className="col-span-3 xl:col-span-2">
             <Google />
             <Bookmarks />
             <div className="grid grid-cols-2 gap-6">
-              <div className="col-span-1">
+              <div className="col-span-2 md:col-span-1">
                 <Clock />
                 <Weather />
               </div>
-              <div className="col-span-1">
+              <div className="col-span-2 md:col-span-1">
                 <Calendar />
               </div>
             </div>

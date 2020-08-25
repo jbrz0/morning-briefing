@@ -27,7 +27,7 @@ function Weather() {
 
     axios.get(`${url}${cityName}&appid=${process.env.OPEN_WEATHER}&units=metric`)
     .then(function (response) {
-      console.log(response.data)
+      // console.log(response.data)
       setWeather(response.data)
 
       // Set keywords
@@ -48,7 +48,6 @@ function Weather() {
   return <div className="bg-purple-400 rounded-xl px-4 py-4 relative">
     {weather !== undefined && weather.weather !== undefined && <>
 
-    {console.log(bg)}
     {keywords.length > 0 &&
     <div className="absolute top-0 left-0 right-0 bottom-0 z-0
       w-full h-full opacity-75 bg-cover bg-center"

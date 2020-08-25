@@ -8,7 +8,7 @@ const dummyText = 'The hottest look right now is definitely bold eyeliner and it
 function NewsItem(props) {
 
   return <>
-    <Link href={props.url}><a>
+    <Link href={props.url}><a className="news-link">
       <div className="bg-purple-300 p-4 rounded-lg border border-solid border-purple-200
         text-white grid gap-4 grid-cols-5 my-4 hover:opacity-75">
 
@@ -39,10 +39,10 @@ function News() {
     .then(function (response) {
       setNews(response.data.articles.slice(0, 8))
     })
-    .then(() => console.log(news))
+    // .then(() => console.log(news))
   }, [])
 
-  return <div className="bg-purple-400 col-span-1 px-8 py-4 rounded-xl">
+  return <div className="news-wrapper bg-purple-400 col-span-3 xl:col-span-1 px-8 py-4 rounded-xl order-last xl:order-first">
     {news.length > 1 && <>
       {news.map((item, i) => <NewsItem
         title={item.title}

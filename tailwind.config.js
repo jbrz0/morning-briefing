@@ -8,6 +8,13 @@ module.exports = {
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
   },
   theme: {
+    screens: {
+      'sm': '640px',
+      // 'md': '768px',
+      'md': '850px',
+      'lg': '1024px',
+      'xl': '1280px',
+    },
     fontFamily: {
       // 'sans': ['Arial', 'sans-serif'],
       // 'serif': ['serif'],
