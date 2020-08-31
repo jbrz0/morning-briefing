@@ -13,8 +13,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Morning Briefing</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet" />
       </Head>
 
       <div className="main-wrapper xl:flex xl:justify-center xl:items-center xl:h-screen">

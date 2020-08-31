@@ -7,10 +7,10 @@
 @import "./calendar.css";
 
 /* Fonts */
-@font-face {
+/* @font-face {
   font-family: 'IBM Plex Sans';
   src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;1,400&display=swap');
-}
+} */
 
 html,
 body {
