@@ -20,7 +20,7 @@ https://pm2.keymetrics.io/docs/usage/startup/
 &nbsp;&nbsp;
 1. `pm2 startup`
 2. Copy & paste provided path in terminal
-3. Startup the app via `node start` (uses pm2)
+3. Startup the app via `npm run startup` (uses pm2, ensure no other processes are running)
 4. Save to the pm2 startup list `pm2 save`
 &nbsp;&nbsp;
 To disable, or reset pm2 startup scripts, use `pm2 unstartup`
