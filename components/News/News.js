@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import axios from 'axios'
 import { useExcerpt } from '../../hooks/useExcerpt'
-
-const dummyText = 'The hottest look right now is definitely bold eyeliner and it\'s easier to do than'
+import demoNews from './demoNews'
 
 function NewsItem(props) {
 
@@ -33,12 +32,19 @@ function News() {
 
   useEffect(() => {
 
-    const url = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey='
+    const loc = location.hostname
+    const url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=`
 
-    axios.get(`${url}${process.env.NEWS}`)
-    .then(function (response) {
-      setNews(response.data.articles.slice(0, 8))
-    })
+    if (loc === 'localhost') {
+      axios.get(`${url}${process.env.NEWS}`)
+      .then(function (response) {
+        setNews(response.data.articles.slice(0, 8))
+      })
+    }
+    else {
+      setNews(demoNews[0].articles.slice(0, 8))
+    }
+
     // .then(() => console.log(news))
   }, [])
 
