@@ -48,7 +48,7 @@ function News() {
     // .then(() => console.log(news))
   }, [])
 
-  return <div className="news-wrapper bg-purple-400 col-span-3 xl:col-span-1 px-8 py-4 rounded-xl order-last xl:order-first">
+  return <div className="mb-16 xl:mb-0 news-wrapper bg-purple-400 col-span-3 xl:col-span-1 px-8 py-4 rounded-xl order-last xl:order-first">
     {news.length > 1 && <>
       {news.map((item, i) => <NewsItem
         title={item.title}
