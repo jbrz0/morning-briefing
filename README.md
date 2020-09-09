@@ -37,15 +37,14 @@ Production:
 
 `npm start`
 
-&nbsp;&nbsp;
 
 ### Depencencies:
 - NextJS / ReactJS
-- Typescript
 - TailwindCSS
-- Easy Peasy/Redux
-- MDX
-- pm2
+- News API
+- Open Weather API
+- Unsplash Source API
+
 
 [1]: https://newsapi.org
 [2]: https://pm2.keymetrics.io/docs/usage/startup
