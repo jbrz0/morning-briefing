@@ -24,18 +24,9 @@ _Based on operating system_: [https://pm2.keymetrics.io/docs/usage/startup][2]
 To disable, or reset pm2 startup scripts, use `pm2 unstartup`
 
 ### Usage:
-
-Dev:
-
-`npm run dev`
-
-Build:
-
-`npm run build`
-
-Production:
-
-`npm start`
+- Dev: `npm run dev`
+- Build: `npm run build`
+- Production: `npm start`
 
 
 ### Depencencies:
