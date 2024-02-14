@@ -32,18 +32,16 @@ function News() {
 
   useEffect(() => {
 
-    const loc = location.hostname
     const url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=`
 
-    if (loc === 'localhost') {
-      axios.get(`${url}${process.env.NEWS}`)
-      .then(function (response) {
-        setNews(response.data.articles.slice(0, 8))
-      })
-    }
-    else {
+    axios.get(url + process.env.NEWS)
+    .then(function (response) {
+      setNews(response.data.articles.slice(0, 8))
+    })
+    .catch(function () {
+      // set news with demo data
       setNews(demoNews[0].articles.slice(0, 8))
-    }
+    })
 
     // .then(() => console.log(news))
   }, [])
@@ -54,12 +52,12 @@ function News() {
     >
     {news.length > 1 && <>
       {news.map((item, i) => <NewsItem
-        title={item.title}
+        title={item.title.length > 55 ? item.title.substring(0,55) + '...' : item.title}
         img={item.urlToImage}
         url={item.url}
         key={i} />)}
     </>}
   </div>
-}
+}    
 
 export default News
