@@ -2,7 +2,7 @@
 
 A browser homepage dashboard, with customizable config options
 
-### [Demo](https://oddscenes.com/lab/morning-briefing)
+### [Demo](https://justinbrazeau.com/lab/morning-briefing)
 
 &nbsp;&nbsp;
 
@@ -10,18 +10,15 @@ A browser homepage dashboard, with customizable config options
 
 &nbsp;&nbsp;
 
-## Running on Startup
+## Running
 
-Because the [News API][1] only allows API requests from localhost, we can run the app on startup locally. Then bookmark localhost with a unique port (set in `/data/server.js`). Default port here is 11843.
+Because the [News API][1] only allows API requests from localhost, we can run the app on startup locally to see live results (or use paid version/other api feed). Fallback demo feed is used on example.
 
-_Based on operating system_: [https://pm2.keymetrics.io/docs/usage/startup][2]
+1. edit .env.sample
 
-1. `pm2 startup`
-2. Copy & paste provided path in terminal
-3. Startup the app via `npm run startup` (uses pm2, ensure no other processes are running)
-4. Save to the pm2 startup list `pm2 save`
-
-To disable, or reset pm2 startup scripts, use `pm2 unstartup`
+- [News API][1]
+- [Open Weather API][1]
+- Links & Title (for bookmarks)
 
 ### Usage:
 - Dev: `npm run dev`
@@ -38,4 +35,4 @@ To disable, or reset pm2 startup scripts, use `pm2 unstartup`
 
 
 [1]: https://newsapi.org
-[2]: https://pm2.keymetrics.io/docs/usage/startup
+[2]: https://openweathermap.org/api
