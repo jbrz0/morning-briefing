@@ -8,15 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.8",
-    "axios": "^0.20.0",
+    "autoprefixer": "^10.4.17",
+    "axios": "^1.6.7",
     "moment": "^2.30.1",
-    "next": "9.5.2",
-    "pm2": "^4.5.6",
-    "postcss-import": "^12.0.1",
-    "react": "16.13.1",
-    "react-calendar": "^3.9.0",
-    "react-dom": "16.13.1",
-    "tailwindcss": "^1.9.6"
+    "next": "14.1.0",
+    "pm2": "^5.3.1",
+    "postcss-import": "^16.0.0",
+    "react": "18.2.0",
+    "react-calendar": "^4.8.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.4.1"
   }
 }
