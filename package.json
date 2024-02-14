@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "startup": "pm2 start next -- start -p 11843"
+    "start": "next start"
   },
   "dependencies": {
     "autoprefixer": "^9.8.8",
