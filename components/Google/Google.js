@@ -14,9 +14,8 @@ function Google() {
   useEffect(() => {
     if (term !== '') search()
   }, [enterPress])
-
-  return <div className="bg-purple-400 p-6 relative mb-6 rounded-xl">
-
+  return <div className="bg-purple-400 p-6 relative mb-6 rounded-xl" 
+    style={{border: '1px solid rgba(251, 250, 250, 0.04)', boxShadow: '0px 0px 154px 0px rgba(12, 12, 16, 0.05) inset, 40px 45px 234px 0px rgba(18, 19, 25, 0.12)'}}>
     <input type="text"
       className="bg-purple-300 text-white placeholder-gray-100 w-full
         rounded-lg outline-none pr-20 py-4 pl-4 border border-solid border-purple-200"

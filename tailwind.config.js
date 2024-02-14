@@ -1,4 +1,8 @@
 module.exports = {
+  content: [
+    './components/**/*.{html,js,jsx,tsx}',
+    './pages/**/*.{html,js,jsx,tsx}'
+  ],
   future: {
     removeDeprecatedGapUtilities: true,
   },

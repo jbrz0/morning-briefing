@@ -7,7 +7,7 @@ import demoNews from './demoNews'
 function NewsItem(props) {
 
   return <>
-    <Link href={props.url}><a className="news-link">
+    <Link href={props.url} className="news-link">
       <div className="bg-purple-300 p-4 rounded-lg border border-solid border-purple-200
         text-white grid gap-4 grid-cols-5 my-4 hover:opacity-75">
 
@@ -22,7 +22,7 @@ function NewsItem(props) {
         </div>
 
       </div>
-    </a></Link>
+    </Link>
   </>
 }
 
@@ -48,7 +48,10 @@ function News() {
     // .then(() => console.log(news))
   }, [])
 
-  return <div className="mb-16 xl:mb-0 news-wrapper bg-purple-400 col-span-3 xl:col-span-1 px-8 py-4 rounded-xl order-last xl:order-first">
+  return <div 
+    className="mb-16 xl:mb-0 news-wrapper bg-purple-400 col-span-3 xl:col-span-1 px-8 py-4 rounded-xl order-last xl:order-first"
+    style={{border: '1px solid rgba(251, 250, 250, 0.04)', boxShadow: '0px 0px 154px 0px rgba(12, 12, 16, 0.05) inset, 40px 45px 234px 0px rgba(18, 19, 25, 0.12)'}}
+    >
     {news.length > 1 && <>
       {news.map((item, i) => <NewsItem
         title={item.title}

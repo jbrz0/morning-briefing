@@ -45,13 +45,21 @@ function Weather() {
 
   }, [])
 
-  return <div className="bg-purple-400 rounded-xl px-4 py-4 relative">
+  return <div className="bg-purple-400 rounded-xl px-4 py-4 relative"
+    style={{border: '1px solid rgba(251, 250, 250, 0.04)', boxShadow: '0px 0px 154px 0px rgba(12, 12, 16, 0.05) inset, 40px 45px 234px 0px rgba(18, 19, 25, 0.12)'}}>
     {weather !== undefined && weather.weather !== undefined && <>
 
     {keywords.length > 0 &&
     <div className="absolute top-0 left-0 right-0 bottom-0 z-0
       w-full h-full opacity-75 bg-cover bg-center"
-      style={{backgroundImage: `url(${bg})`, borderRadius: '1.5rem'}}
+      style={{
+        backgroundImage: `url(${bg})`, 
+        borderRadius: '1.5rem',
+        borderSize: '1px',
+        borderStyle: 'solid',
+        borderColor: 'rgba(251, 250, 250, 0.04)',
+        boxShadow: '0px 0px 154px 0px rgba(12, 12, 16, 0.05) inset, 40px 45px 234px 0px rgba(18, 19, 25, 0.12)'
+      }}
     ></div>
     }
 

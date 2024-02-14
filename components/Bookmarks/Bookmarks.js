@@ -14,7 +14,8 @@ const links = [
 function Bookmarks() {
 
 
-  return <div className="bg-purple-400 rounded-xl p-4 mb-6">
+  return <div className="bg-purple-400 rounded-xl p-4 mb-6" 
+    style={{border: '1px solid rgba(251, 250, 250, 0.04)', boxShadow: '0px 0px 154px 0px rgba(12, 12, 16, 0.05) inset, 40px 45px 234px 0px rgba(18, 19, 25, 0.12)'}}>
     <div className="grid grid-cols-2 md:grid-cols-4">
 
       {links.map((link, i) => <a
